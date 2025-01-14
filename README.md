@@ -4,3 +4,4 @@
 ## Демонстрация работы игры
 
 [Посмотреть демо аскинему](https://asciinema.org/a/SUZM0ttVQePpJJmLjgE1vghs5)
+https://asciinema.org/a/RCvMAVnUtZguBd3vMYq9ls6fI
