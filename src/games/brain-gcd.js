@@ -25,3 +25,4 @@ function getRandomInt(min, max) {
   const startBrainGcd = () => mainEngin(getData, description);
 
   export default startBrainGcd;
+  
