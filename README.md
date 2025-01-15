@@ -5,3 +5,4 @@
 
 [Посмотреть демо аскинему](https://asciinema.org/a/SUZM0ttVQePpJJmLjgE1vghs5)
 https://asciinema.org/a/RCvMAVnUtZguBd3vMYq9ls6fI
+[Посмотреть демо brain-gcd](https://asciinema.org/a/h2POsp9kfvAgNsM4SUzNqBA6z)
