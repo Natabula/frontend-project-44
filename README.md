@@ -7,3 +7,4 @@
 [Посмотреть демо brain-calc](https://asciinema.org/a/RCvMAVnUtZguBd3vMYq9ls6fI)
 [Посмотреть демо brain-gcd](https://asciinema.org/a/h2POsp9kfvAgNsM4SUzNqBA6z)
 [Посмотреть демо brain-progression](https://asciinema.org/a/NXAOXj1gT2mhsTe7n2BsVz8eJ)
+[Посмотреть демо brain-prime](https://asciinema.org/a/7anEQseXusTusuMiZNurFVIh7)
