@@ -20,7 +20,7 @@ const description = ('Find the greatest common divisor of given numbers');
 const getData = () => {
   const numRandom1 = getRandomInt(0, 100);
   const numRandom2 = getRandomInt(0, 100);
-  const question = `${numRandom1}, ${numRandom2}`;
+  const question = `${numRandom1} ${numRandom2}`;
   const questionRight = `${gcdResult(numRandom1, numRandom2)}`;
   return [question, questionRight];
 };
