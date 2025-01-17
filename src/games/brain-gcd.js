@@ -1,17 +1,19 @@
 import mainEngin from '../index.js';
 
 function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  const localMin = Math.ceil(min);
+  const localMax = Math.floor(max);
+  return Math.floor(Math.random() * (localMax - localMin + 1)) + localMin;
 }
 const gcdResult = (num1, num2) => {
-  while (num2 !== 0) {
-    const temp = num2;
-    num2 = num1 % num2;
-    num1 = temp;
+  let localNum1 = num1;
+  let localNum2 = num2;
+  while (localNum2 !== 0) {
+    const temp = localNum2;
+    localNum2 = localNum1 % localNum2;
+    localNum1 = temp;
   }
-  return num1;
+  return localNum1;
 };
 const description = ('Find the greatest common divisor of given numbers');
 

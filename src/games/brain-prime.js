@@ -1,9 +1,9 @@
 import mainEngin from '../index.js';
 
 function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  const localMin = Math.ceil(min);
+  const localMax = Math.floor(max);
+  return Math.floor(Math.random() * (localMax - localMin + 1)) + localMin;
 }
 
 const description = ('Answer "yes" if given number is prime. Otherwise answer "no"');
@@ -14,7 +14,7 @@ const getData = () => {
   if (question < 2) {
     questionResult = 'no';
   } else {
-    for (let i = 2; i < question; i++) {
+    for (let i = 2; i < question; i += 1) {
       if (question % i === 0) {
         questionResult = 'no';
         break;

@@ -1,9 +1,9 @@
 import mainEngin from '../index.js';
 
 function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  const localMin = Math.ceil(min);
+  const localMax = Math.floor(max);
+  return Math.floor(Math.random() * (localMax - localMin + 1)) + localMin;
 }
 
 const description = ('What number is missing in the progression?');
@@ -14,7 +14,7 @@ const getData = () => {
   const hiddenIndex = getRandomInt(0, 9);
 
   const progression = [];
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 10; i += 1) {
     progression.push(start + i * diff);
   }
   const questionRight = `${progression[hiddenIndex]}`;

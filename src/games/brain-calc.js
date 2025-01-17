@@ -1,9 +1,9 @@
 import mainEngin from '../index.js';
 
 function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  const localMin = Math.ceil(min);
+  const localMax = Math.floor(max);
+  return Math.floor(Math.random() * (localMax - localMin + 1)) + localMin;
 }
 const operators = ['+', '-', '*'];
 
