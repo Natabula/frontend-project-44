@@ -1,10 +1,5 @@
 import mainEngin from '../index.js';
-
-function getRandomInt(min, max) {
-  const localMin = Math.ceil(min);
-  const localMax = Math.floor(max);
-  return Math.floor(Math.random() * (localMax - localMin + 1)) + localMin;
-}
+import getRandomInt from '../utils.js';
 
 const description = ('What number is missing in the progression?');
 

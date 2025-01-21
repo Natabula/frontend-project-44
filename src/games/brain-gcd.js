@@ -1,10 +1,6 @@
 import mainEngin from '../index.js';
+import getRandomInt from '../utils.js';
 
-function getRandomInt(min, max) {
-  const localMin = Math.ceil(min);
-  const localMax = Math.floor(max);
-  return Math.floor(Math.random() * (localMax - localMin + 1)) + localMin;
-}
 const gcdResult = (num1, num2) => {
   let localNum1 = num1;
   let localNum2 = num2;
