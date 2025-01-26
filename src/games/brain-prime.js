@@ -2,21 +2,20 @@ import mainEngin from '../index.js';
 import getRandomInt from '../utils.js';
 
 const description = ('Answer "yes" if given number is prime. Otherwise answer "no"');
-
-const getData = () => {
-  const question = getRandomInt(0, 20);
-  let questionResult = 'yes';
-  if (question < 2) {
-    questionResult = 'no';
-  } else {
-    for (let i = 2; i < question; i += 1) {
-      if (question % i === 0) {
-        questionResult = 'no';
-        break;
-      }
+const isPrime = (number) => {
+  if (number < 2) {
+    return false;
+  }
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
+      return false;
     }
   }
-  const questionRight = `${questionResult}`;
+  return true;
+};
+const getData = () => {
+  const question = getRandomInt(0, 20);
+  const questionRight = isPrime(question) ? 'yes' : 'no';
   return [question, questionRight];
 };
 const startBrainPrime = () => mainEngin(getData, description);

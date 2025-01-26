@@ -23,8 +23,9 @@ const getData = () => {
       questionResult = operand1 * operand2;
       break;
     default:
-      questionResult = NaN;
+      throw new Error(`Unknown order state: '${operator}'!`);
   }
+
   const questionRight = String(questionResult);
   return [question, questionRight];
 };
